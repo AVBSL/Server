@@ -1,0 +1,6 @@
+{
+    "type": "mysql",
+    "entities": ["src/entity/*.js"],
+    "logging": true,
+    "synchronize": true
+  }
