@@ -1,6 +1,6 @@
-const passport = require('passport');
+import passport from 'passport';
 
-import CustomMiddleware from "./CustomMiddleware";
+import CustomMiddleware from "../abstracts/CustomMiddleware";
 
 
 class PassportMiddleware extends CustomMiddleware {

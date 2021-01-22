@@ -1,5 +1,5 @@
 import express from "express";
-import CustomMiddleware from "../middlewares/CustomMiddleware";
+import CustomMiddleware from "../abstracts/CustomMiddleware";
 
 function applyMiddlewares(app: express.Express, mdws: [CustomMiddleware]){
     mdws.forEach((mdw) =>{
