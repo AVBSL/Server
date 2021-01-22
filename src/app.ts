@@ -1,10 +1,14 @@
 import express from "express";
 
+import PassportMiddleware from "./middlewares/PassportMiddleware";
 import {SERVER_CONFIG} from "./config";
+import applyMiddlewares from "./utils/applyMiddlewares";
 
 const app = express();
 
-app.get("/status",function(req,res,next){
+applyMiddlewares(app,[PassportMiddleware]);
+
+app.get("/status",function(_req,res,_next){
     res.send("working");
 });
 
